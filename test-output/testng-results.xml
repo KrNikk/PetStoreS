@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-11-30T17:28:42 CET" name="Default suite" finished-at="2023-11-30T17:28:52 CET" duration-ms="9984">
+    <groups>
+      <group name="smoke">
+        <method signature="petDetailTest.Test1()[pri:0, instance:com.example.sandbox.getPet.petDetailTest@479d31f3]" name="Test1" class="com.example.sandbox.getPet.petDetailTest"/>
+        <method signature="petDetailTest.Test2()[pri:0, instance:com.example.sandbox.getPet.petDetailTest@479d31f3]" name="Test2" class="com.example.sandbox.getPet.petDetailTest"/>
+        <method signature="petDetailTest.Test3()[pri:0, instance:com.example.sandbox.getPet.petDetailTest@479d31f3]" name="Test3" class="com.example.sandbox.getPet.petDetailTest"/>
+        <method signature="petDetailTest.Test4()[pri:0, instance:com.example.sandbox.getPet.petDetailTest@479d31f3]" name="Test4" class="com.example.sandbox.getPet.petDetailTest"/>
+        <method signature="petDetailTest.Test5()[pri:0, instance:com.example.sandbox.getPet.petDetailTest@479d31f3]" name="Test5" class="com.example.sandbox.getPet.petDetailTest"/>
+        <method signature="petDetailTest.Test6()[pri:0, instance:com.example.sandbox.getPet.petDetailTest@479d31f3]" name="Test6" class="com.example.sandbox.getPet.petDetailTest"/>
+        <method signature="petDetailTest.Test7()[pri:0, instance:com.example.sandbox.getPet.petDetailTest@479d31f3]" name="Test7" class="com.example.sandbox.getPet.petDetailTest"/>
+        <method signature="petDetailTest.Test8()[pri:0, instance:com.example.sandbox.getPet.petDetailTest@479d31f3]" name="Test8" class="com.example.sandbox.getPet.petDetailTest"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2023-11-30T17:28:42 CET" name="Default test" finished-at="2023-11-30T17:28:52 CET" duration-ms="9984">
+      <class name="com.example.sandbox.getPet.petDetailTest">
+        <test-method signature="Test1()[pri:0, instance:com.example.sandbox.getPet.petDetailTest@479d31f3]" started-at="2023-11-30T17:28:42 CET" name="Test1" description="description" finished-at="2023-11-30T17:28:46 CET" duration-ms="3612" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test1 -->
+        <test-method signature="Test2()[pri:0, instance:com.example.sandbox.getPet.petDetailTest@479d31f3]" started-at="2023-11-30T17:28:46 CET" name="Test2" description="description" finished-at="2023-11-30T17:28:47 CET" duration-ms="1552" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test2 -->
+        <test-method signature="Test3()[pri:0, instance:com.example.sandbox.getPet.petDetailTest@479d31f3]" started-at="2023-11-30T17:28:47 CET" name="Test3" description="Testing POST method - auto generated ID" finished-at="2023-11-30T17:28:48 CET" duration-ms="829" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test3 -->
+        <test-method signature="Test4()[pri:0, instance:com.example.sandbox.getPet.petDetailTest@479d31f3]" started-at="2023-11-30T17:28:48 CET" name="Test4" description="Testing POST method with custom body (name and status)" finished-at="2023-11-30T17:28:49 CET" duration-ms="608" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test4 -->
+        <test-method signature="Test5()[pri:0, instance:com.example.sandbox.getPet.petDetailTest@479d31f3]" started-at="2023-11-30T17:28:49 CET" name="Test5" description="Testing POST method with custom ID, name and status" finished-at="2023-11-30T17:28:49 CET" duration-ms="609" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test5 -->
+        <test-method signature="Test6()[pri:0, instance:com.example.sandbox.getPet.petDetailTest@479d31f3]" started-at="2023-11-30T17:28:49 CET" name="Test6" description="Testing PUT method" finished-at="2023-11-30T17:28:50 CET" duration-ms="614" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test6 -->
+        <test-method signature="Test7()[pri:0, instance:com.example.sandbox.getPet.petDetailTest@479d31f3]" started-at="2023-11-30T17:28:50 CET" name="Test7" description="Testing PUT method to FAIL" finished-at="2023-11-30T17:28:51 CET" duration-ms="608" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Invalid response code expected [200] but found [500]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Invalid response code expected [200] but found [500]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:907)
+at com.example.sandbox.getPet.petDetailTest.Test7(petDetailTest.java:111)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test7 -->
+        <test-method signature="Test8()[pri:0, instance:com.example.sandbox.getPet.petDetailTest@479d31f3]" started-at="2023-11-30T17:28:51 CET" name="Test8" description="Testing DELETE method - delete the first item with &#039;status&#039;=&#039;available&#039;" finished-at="2023-11-30T17:28:52 CET" duration-ms="1505" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test8 -->
+      </class> <!-- com.example.sandbox.getPet.petDetailTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

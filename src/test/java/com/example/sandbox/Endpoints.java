@@ -7,8 +7,8 @@ public class Endpoints {
     //-------------------------pet-------------------------
     public static final String findByStatus = "/pet/findByStatus";
     public static final String uploadImage = "/pet/{petId}/uploadImage";
-    public static final String newPet = "/pet";
-    public static final String petById = "/pet/{petId}";
+    public static final String pet = "/pet";
+    public static final String petById = "/pet/";
 
     //-------------------------store-------------------------
     public static final String order = "/store/order";

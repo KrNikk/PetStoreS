@@ -33,4 +33,15 @@ public class petListTest extends Common {
         Assert.assertEquals(response.getStatusCode(),200,"Invalid response code");
 
     }
+    
+    @Test(enabled = true,groups = {SMOKE},description ="Get pet by ID")
+    public void Test3(){
+
+    	String id = "77";
+    	
+        Response  response2 = getUrl(petById+id);
+        Assert.assertEquals(response2.getStatusCode(),200,"Invalid response code");
+    }
+    
+   
 }
